@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura Semântica HTML5</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- <header>: Cabeçalho principal da página ou de uma seção. Agrupa marca registrada, logos e navegação primária -->
+    <header>
+        <h1>Portal do Conhecimento Web</h1>
+        <p>Um guia de referência estrutural em HTML5 puro.</p>
+
+        <!-- <nav>: Define um bloco contendo links de navegação essenciais do site -->
+        <nav>
+            <ul>
+                <li><a href="#artigo-principal">Artigo Principal</a></li>
+                <li><a href="#faq">Perguntas Frequentes</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+        <div class="d_whats">
+            <div class="p_whats"><strong>W</strong></div>
+    </div>
+        
+    </header>
+
+    <hr>
+
+    <!-- <main>: Conteúdo principal e exclusivo do documento. Deve existir apenas um por página -->
+    <main>
+            <section>
+                <h2>titulo 2</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iusto similique blanditiis quasi enim ratione iste fugiat perspiciatis quam, porro unde nisi saepe facere fuga molestias eaque. Consequuntur, obcaecati magni? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor cum, esse eligendi ut asperiores ducimus, autem, sit quas quis dicta repudiandae aliquid at error sunt animi rem tenetur modi commodi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptas earum, necessitatibus porro, doloremque, iste reiciendis molestias labore distinctio tenetur inventore quisquam vitae eaque possimus officia voluptatem corrupti expedita nisi.
+                </p>
+
+
+            </section>
+        <!-- <section>: Agrupa conteúdos relacionados por um mesmo tema ou tópico -->
+        <section id="artigo-principal">
+            
+            <!-- <article>: Conteúdo autônomo e independente que faz sentido por si só (ex: post de blog, notícia) -->
+            <article>
+            
+                    <h2>Entendendo a Semântica do HTML5</h2>
+                    <p>
+                        Publicado por <strong>Maria Oliveira</strong> em 
+                        <!-- <time>: Representa uma data, hora ou período legível por máquina e humanos -->
+                        <time datetime="2026-09-23">23 de Setembro de 2026</time>
+                    </p>
+           
+
+                <p>
+                    A semântica na web refere-se ao uso de tags HTML que descrevem claramente o seu <mark>significado e propósito</mark> tanto para o navegador quanto para o desenvolvedor e leitores de tela.
+                </p>
+
+                <p>
+                    <!-- <mark>: Destaca ou realça um trecho de texto devido à sua relevância no contexto atual -->
+                    Usar tags apropriadas melhora a <mark>acessibilidade</mark> e otimiza o posicionamento nos motores de busca (SEO).
+                </p>
+
+                <!-- <figure>: Bloco de conteúdo autônomo como imagens, ilustrações, diagramas ou trechos de código -->
+                <figure>
+                    <img src="https://placehold.co/600x300/333/fff?text=Diagrama+Semantico+HTML5" alt="Diagrama demonstrando a estrutura semântica de uma página HTML5">
+                    <!-- <figcaption>: Legenda ou título explicativo para o elemento <figure> -->
+                    <figcaption>Figura 1: Representação gráfica dos blocos semânticos do HTML5.</figcaption>
+                </figure>
+
+                <p>
+                    Abaixo está uma demonstração de código formatado usando a tag <code>&lt;code&gt;</code> dentro de um bloco <code>&lt;pre&gt;</code>:
+                </p>
+
+                <pre>
+<code>&lt;article&gt;
+  &lt;h1&gt;Título do Artigo&lt;/h1&gt;
+  &lt;p&gt;Conteúdo do artigo...&lt;/p&gt;
+&lt;/article&gt;</code>
+                </pre>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <!-- <section>: Segunda seção para perguntas frequentes -->
+        <section id="faq">
+            <h2>Perguntas Frequentes (FAQ)</h2>
+
+            <!-- <details>: Cria um widget interativo de retrátil/expansível que o usuário pode abrir e fechar -->
+            <details>
+                <!-- <summary>: Define o cabeçalho ou legenda visível para o elemento <details> -->
+                <summary>O que é semântica no desenvolvimento web?</summary>
+                <p>
+                    Semântica é dar sentido ao código utilizando as tags corretas para cada tipo de informação, em vez de usar apenas marcas genéricas sem significado como divs.
+                </p>
+            </details>
+
+            <details>
+                <summary>Por que não usar CSS ou JS nesta demonstração?</summary>
+                <p>
+                    Para focar puramente na estrutura e hierarquia do documento HTML5 nativo, demonstrando como os navegadores interpretam o significado dos elementos sem estilização visual.
+                </p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- <section>: Terceira seção com informações sobre o documento -->
+        <section id="sobre">
+            <h2>Sobre este Guia</h2>
+            <p>
+                Este documento serve como um modelo estritamente semântico para validar a estrutura acessível de uma página sem dependências externas de estilos ou scripts.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- <aside>: Conteúdo periférico, relacionado indiretamente ao conteúdo principal (barra lateral, links úteis, anúncios) -->
+    <aside>
+        <h3>Recursos Adicionais</h3>
+        <ul>
+            <li><a href="#">Documentação MDN Web Docs</a></li>
+            <li><a href="#">Especificação Oficial do W3C</a></li>
+            <li><a href="#">Guia de Acessibilidade WCAG</a></li>
+        </ul>
+    </aside>
+
+    <hr>
+
+    <!-- <footer>: Rodapé da página ou de uma seção. Contém direitos autorais, termos, links e informações de contato -->
+    <footer>
+        <!-- <address>: Informações de contato do autor ou proprietário do documento -->
+        <address>
+            <p>Contato do Autor:</p>
+            <p>Email: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+            <p>Endereço: Av. Paulista, 1000 - São Paulo, SP</p>
+        </address>
+
+        <p>
+            <small>&copy; <time datetime="2026">2026</time> Portal do Conhecimento Web. Todos os direitos reservados.</small>
+        </p>
+    </footer>
+
+</body>
+</html>
